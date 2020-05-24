@@ -1,0 +1,8 @@
+{% block subject %}Nouveau email recu de {{name}}{% endblock %}
+
+{% block html %}
+
+  <p>Le message est : {{message}}</p>
+
+  <p>Thanks, you Rang mouy Gaw!</p>
+{% endblock %}

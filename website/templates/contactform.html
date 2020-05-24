@@ -1,0 +1,25 @@
+{% load static %}
+<form class="contact2-form validate-form" method="post" action="{% url 'contact' %}"  >
+	{% csrf_token %}
+
+   <div class="wrap-input2 validate-input" data-validate="Le champ Nom est obligatoire">
+      <input class="input2" type="text" name="name">
+      <span class="focus-input2" data-placeholder="Votre Nom"></span>
+   </div>
+   <div class="wrap-input2 validate-input" data-validate = "Un email valide est requis: ex@abc.xyz">
+      <input class="input2" type="text" name="email">
+      <span class="focus-input2" data-placeholder="Votre Email"></span>
+   </div>
+   <div class="wrap-input2 validate-input" data-validate = "Le champ Message est obligatoire">
+      <textarea class="input2" name="message"></textarea>
+      <span class="focus-input2" data-placeholder="Message"></span>
+   </div>
+   <div class="container-contact2-form-btn">
+      <div class="wrap-contact2-form-btn">
+         <div class="contact2-form-bgbtn"></div>
+         <button class="contact2-form-btn">
+         Envoyer Message
+         </button>
+      </div>
+   </div>
+</form>
